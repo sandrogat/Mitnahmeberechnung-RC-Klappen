@@ -1,0 +1,20 @@
+
+body{font-family:system-ui;max-width:900px;margin:20px auto;padding:10px}
+.card{border:1px solid #ccc;padding:15px;margin-bottom:20px;border-radius:10px}
+label{display:block;margin-bottom:10px}
+input{width:100%;padding:6px;margin-top:3px}
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #ccc;padding:8px;text-align:center}
+
+.hidden{display:none !important}
+
+h1 {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #666;
+  margin-top: 0;
+}

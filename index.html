@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Berechnung der Klappen-Mitnahme</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Mitnahmeberechnung für Wölb- und Querruderklappen</h1>
+<h2 class="subtitle">nach Philip Kolb</h2>
+
+<section class="card">
+<h2>1) Flügeltyp</h2>
+<label><input type="radio" name="wing" value="4" checked> 4‑Klappen</label>
+<label><input type="radio" name="wing" value="6"> 6‑Klappen</label>
+<label><input type="radio" name="wing" value="8"> 8‑Klappen</label>
+</section>
+
+<section class="card">
+<h2>2) Längen (mm)</h2>
+
+<label>Rumpf‑Gap
+<input type="number" id="gap" value="8"></label>
+
+<label class="wk">WK Länge
+<input type="number" id="wk" value="52"></label>
+
+<label class="wk1">WK1 Länge
+<input type="number" id="wk1" value="82"></label>
+
+<label class="wk2">WK2 Länge
+<input type="number" id="wk2" value="62"></label>
+
+<label>QR1 Länge
+<input type="number" id="qr1" value="78"></label>
+
+<label class="qr2">QR2 Länge
+<input type="number" id="qr2" value="20"></label>
+
+</section>
+
+<section class="card">
+<h2>3) Tiefen (mm)</h2>
+
+<label class="wk">WK Tiefe
+<input type="number" id="depthWK" value="75"></label>
+
+<label class="wk1">WK1 Tiefe
+<input type="number" id="depthWK1" value="68"></label>
+
+<label class="wk2">WK2 Tiefe
+<input type="number" id="depthWK2" value="48"></label>
+
+<label>QR1 Tiefe
+<input type="number" id="depthQR1" value="55"></label>
+
+<label class="qr2">QR2 Tiefe
+<input type="number" id="depthQR2" value="40"></label>
+
+</section>
+
+<section class="card">
+<h2>4) QR Ausschläge (mm)</h2>
+
+<label>QR +
+<input type="number" id="qrUp" value="20"></label>
+
+<label>QR – (mit Vorzeichen)
+<input type="number" id="qrDown" value="-8"></label>
+
+</section>
+
+<section class="card">
+<h2>Ergebnis</h2>
+<table>
+<thead>
+<tr>
+<th>Klappe</th>
+<th>+ (mm / °)</th>
+<th>– (mm / °)</th>
+</tr>
+</thead>
+<tbody id="result"></tbody>
+</table>
+<button id="copyMarkdown">Markdown kopieren</button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>

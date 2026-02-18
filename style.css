@@ -18,3 +18,12 @@ h1 {
   color: #666;
   margin-top: 0;
 }
+
+.hero-image {
+  display: block;
+  width: 100%;        /* füllt exakt die Containerbreite */
+  max-width: 100%;    /* niemals breiter als der Rahmen */
+  height: auto;       /* kein Verzerren */
+  margin: 20px 0;     /* Abstand oben/unten */
+  border-radius: 8px; /* optional */
+}
